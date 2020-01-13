@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: #999;
+
+}
+ul{
+    list-style: none;
+}
+h1,h6{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 100%;
+}
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url(../images/netflix-background-9.jpg) no-repeat center center/cover;
+
+}
+.showcase::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 2220px black,inset -120px -100px 2220px black;
+}
+
+.sh-top{
+    position: relative;
+    height: 90px;
+    z-index: 2;
+    
+
+}
+.sh-top img{
+    
+    position: absolute;
+    width: 170px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sh-top a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+    display: inline;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    border-radius: 2px;
+    padding: 0.4rem 1.3rem;
+    outline: none;
+
+}
+
+
+
+.sh-top a:hover{
+    opacity: 0.9;
+}
+.sh-content{
+    position: relative;
+    margin: auto;
+    display:grid;
+    margin-top: 9rem;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 1em;
+    z-index: 2;
+    
+}
+.sh-content a{
+    position: absolute;
+    top: 110px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 1rem 1.5rem;
+    outline: none;
+
+}
+
+.sh-content a:hover{
+    opacity: 0.9;
+}
+.sh-content h1{
+    font-weight: 530;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+.sh-content h6{
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.tabs{
+    background: #141414;
+    padding-top: 1rem;
+    border-bottom: 1px solid #3d3d3d;
+
+}
+.container{
+    max-width:70%;
+    margin: auto;
+    position: relative;
+    padding:0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+ .tab-item i{
+     padding-bottom: 0.5rem;
+ }
+
+ .tab-item:hover{
+    color: white;
+    cursor: pointer;
+ }
+
+ .tab-border{
+     
+     border-bottom: solid red 2px;
+     margin-bottom: 0;
+     padding-left: 5rem;
+     padding-right: 5rem;
+     margin-bottom: 0;
+    
+ }
+
+ .tabc{
+     width: 60%;
+     margin: auto;
+     height: 300px;
+     overflow: hidden;
+     position: relative;
+     display: grid;
+     grid-template-columns: 60% 40%;
+      
+ }
+
+ .tabc a{
+     text-decoration: none;
+     margin-top: 1rem;
+     background-color: red;
+     color: white;
+     border: none;
+     font-size: 1rem;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 2px;
+     padding: 0.5rem 0.8em;
+     outline: none;
+     align-content: end;
+ }
+ .tabc a:hover{
+     opacity: 0.9;
+ }
+
+ 
+ .partone{
+     overflow: hidden;
+     padding-top: 3rem;
+     padding-left: 2rem;
+     color: white;
+     font-weight: 60;
+     font-family: Helvetica, sans-serif;
+     line-height:1.3rem;
+
+ }
+
+ .tabc img{
+   
+    overflow: hidden;
+    margin-top: 3rem;
+    
+
+}
+
+.s0, .s6{
+    margin: auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    padding-top: 1rem;
+    padding-bottom: 0;
+   
+    
+}
+.s2, .s7{
+    margin-right: 1rem;
+
+}
+.s3 , .s8{
+
+    text-decoration: none;
+     margin-top: 1rem;
+     background-color: red;
+     color: white;
+     border: none;
+     font-size: 0.7rem;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 2px;
+     padding: 0.5rem 0.8em;
+     outline: none;
+     margin-bottom: 2rem;
+     margin-left: 4rem;
+     
+
+}
+.s3 , .s8 :hover{
+    opacity: 0.9;
+}
+
+.s2, .s7{
+    padding-left: 3rem;
+}
+
+.s4{
+    margin: auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-items: center;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 0;
+    grid-gap: 1rem;
+}
+
+.s5{
+    padding: 2rem;
+}
+.s5 img{
+    height: 120px;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    align-content:end;
+}
+.s4 h4{
+    color: white;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+.myti{
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.myti thead tr th{
+    color: white;
+    font-weight: 100;
+}
+
+
+.myti th,td{
+    padding: 0.5rem 3rem;
+    text-align: center;
+}
+
+.myti tbody tr td:first-child{
+    text-align: left;
+}
+
+
+.myti tbody tr:nth-child(odd){
+    background: #222222;
+}
+
+.footer{
+    max-width: 75%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.footer p{
+    margin-bottom: 2rem;
+}
+
+.cols{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    margin-bottom: 3rem;
+    
+}
+.cols ul li a{
+   
+   color:gray;
+}
+
+.tab-1-ct ,.tab-2-ct,.tab-3-ct{
+    display: none;
+}
+
+.tt{
+    display:block !important ;
+}
+
+@media(max-width:960px){
+    .showcase{
+        height: 70vh;
+    }
+     .tab-item p{
+         display: none;
+     }
+
+     .sh-top img{
+         top: 30%;
+         left: 5%;
+         transform: translate(0);
+     }
+
+}
+
+
